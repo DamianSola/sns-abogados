@@ -4,6 +4,7 @@ import Navbar from "@/components/NavBar";
 import Image from "next/image";
 import Services from "@/components/services";
 import Partners from "@/components/partners";
+import Values from "@/components/newValues";
 
 export default function Home() {
   return (
@@ -11,8 +12,9 @@ export default function Home() {
       <Navbar/>
       <main className="h-auto ">
        <Introduction/>
-       <Services/>
        <Partners/>
+       <Values/>
+       <Services/>
       </main>
       <Footer/>
     </div>

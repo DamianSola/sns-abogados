@@ -12,7 +12,7 @@ const Navbar = () => {
   };
 
   return (
-    <nav className="z-20 md:absolute sticky w-full bg-white text-[#434343] md:px-10 ">
+    <nav className="z-20 sticky w-full bg-white text-[#434343] md:px-10 ">
       <div className="container mx-auto flex justify-between items-center p-4">
         {/* Logo */}
         <div className="text-2xl font-bold md:ml-0 ">
@@ -21,11 +21,11 @@ const Navbar = () => {
 
         {/* Desktop Menu */}
         <ul className="hidden md:flex space-x-6">
-          <li><a href="/" className="hover:text-black hover:border-b-2 border-black">Inicio</a></li>
-          <li><a href="/nosotros" className="hover:text-black hover:border-b-2 border-black">Nosotros</a></li>
-          <li><a href="/#servicios" className="hover:text-black hover:border-b-2 border-black">Servicios</a></li>
-          <li><a href="/#asociados" className="hover:text-black hover:border-b-2 border-black">Asociados</a></li>
-          <li><a href="/#contacto" className="hover:text-black hover:border-b-2 border-black">Contáctanos</a></li>
+          <li><a href="/" className="hover:border-b-2 border-[#434343] duration-100">Inicio</a></li>
+          <li><a href="/nosotros" className=" hover:border-b-2 border-[#434343] duration-100">Nosotros</a></li>
+          <li><a href="/#servicios" className=" hover:border-b-2 border-[#434343] duration-100">Servicios</a></li>
+          <li><a href="/#asociados" className=" hover:border-b-2 border-[#434343] duration-100">Asociados</a></li>
+          <li><a href="/#contacto" className=" hover:border-b-2 border-[#434343] duration-100">Contáctanos</a></li>
         </ul>
 
         {/* Mobile Menu Toggle Button */}

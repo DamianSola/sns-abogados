@@ -7,7 +7,6 @@ const PartnersCard = ({image, name, field, open, partner}) => {
 
     const seeMore = () => {
         open(partner);
-
     }
 
 
@@ -18,7 +17,10 @@ const PartnersCard = ({image, name, field, open, partner}) => {
             </div>
             <div className="p-4 text-center">
                 <p className="tracking-wider text-xl font-bold">{name}</p>
-                <p className="tracking-wider">{field}</p>
+                {field.map((e,i) => {
+                    return <p className="tracking-wider font-medium text-md text-[#434343]" key={i}>{e.name}</p>
+                })
+                }
                 <button 
                 className="p-2 border rounded-md border-[#434343] mt-4 hover:bg-[#434343] hover:text-white duration-200" 
                 onClick={seeMore}>
