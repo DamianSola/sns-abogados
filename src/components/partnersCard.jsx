@@ -11,8 +11,8 @@ const PartnersCard = ({image, name, field, open, partner}) => {
 
 
     return(
-        <div className="w-80 shadow-2xl mb-6" >
-            <div className="w-full h-80 ">
+        <div className="md:w-80 shadow-2xl mb-6" >
+            <div className="w-full h-auto">
             <img src={image} alt='photo' className="w-full h-full"/>
             </div>
             <div className="p-4 text-center">

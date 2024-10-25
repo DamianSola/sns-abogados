@@ -24,7 +24,7 @@ const Partners = () => {
 
 
     return(
-        <div className="p-20 py-10" id="asociados">
+        <div className="p-6 sm:p-20 py-10" id="asociados">
             <h1 className="text-center text-3xl tracking-widest	p-6">Asociados</h1>
             {open && <PartenerModal close={() => setOpen(false)} data={partner}/>}
             <div className="flex flex-wrap w-full justify-around ">
