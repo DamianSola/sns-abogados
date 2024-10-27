@@ -3,7 +3,7 @@ import { FaPhone, FaEnvelope } from 'react-icons/fa';
 const PartenerModal = ({close, data}) => {
 
 
-  const {name, field, image, phone, email, formation} = data
+  const {name, field, image, phone, email, formation, experience} = data
 
     return(
         <div className="fixed inset-0 bg-gray-800 text-[#434343] bg-opacity-50 flex items-center justify-center z-50 max-h-screen">
@@ -55,11 +55,7 @@ const PartenerModal = ({close, data}) => {
                   </>
                 }
                 <p className="text-lg my-2">Experiencia</p>
-                <p className="text-sm my-4 text-justify">
-                  Con más de 12 años de experiencia en el ámbito jurídico, Juan Pérez ha trabajado en prestigiosos estudios de abogados y ha representado tanto a empresas nacionales como internacionales en litigios complejos. 
-                  A lo largo de su carrera, ha liderado casos en áreas como Derecho Comercial, Derecho Civil y Derecho Laboral, obteniendo resultados favorables para sus clientes en negociaciones y arbitrajes. 
-                  Juan también ha asesorado a startups en temas de compliance y propiedad intelectual, ayudando a proteger sus activos legales en mercados globales.
-                </p>
+                <p className="text-sm my-4 text-justify">{experience}</p>
                
               </div>
             </div>
