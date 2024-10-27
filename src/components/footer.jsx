@@ -34,11 +34,11 @@ const Footer = () => {
               rel="noopener noreferrer" 
               className="text-lg mb-2 flex items-center">
                 <FaMapMarkerAlt  className="mr-2"/> Avenida Bicentenario de la Batalla de Salta nº 492 1er piso</a>
-            <a  href="tel:+123456789" className="text-lg mb-2 flex items-center">
+            {/* <a  href="tel:+123456789" className="text-lg mb-2 flex items-center">
               <FaPhone  className="mr-2"/> +123 456 789</a>
             
             <a  href="mailto:contacto@correo.com" className="text-lg mb-2 flex items-center">
-              <FaEnvelope  className="mr-2"/> info@example.com</a>
+              <FaEnvelope  className="mr-2"/> info@example.com</a> */}
           </div>
 
           {/* Social Icons */}
