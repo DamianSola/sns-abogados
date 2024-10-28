@@ -11,9 +11,7 @@ const Introduction = () => {
         <img 
           src="https://hispajuris.es/wp-content/uploads/2022/07/abogados-madrid.jpg"
           alt="Introduction Image" 
-          className="object-cover w-full max-h-svh	brightness-10 saturate-50
-
-"
+          className="object-cover w-full max-h-svh"
         />
       </div>
     </div>

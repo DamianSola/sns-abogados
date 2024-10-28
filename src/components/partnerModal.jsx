@@ -1,9 +1,9 @@
-import { FaPhone, FaEnvelope } from 'react-icons/fa';
+import { FaPhone, FaEnvelope, FaInstagram } from 'react-icons/fa';
 
 const PartenerModal = ({close, data}) => {
 
 
-  const {name, field, image, phone, email, formation, experience} = data
+  const {name, field, image, phone, email, formation,  instagram, experience} = data
 
     return(
         <div className="fixed inset-0 bg-gray-800 text-[#434343] bg-opacity-50 flex items-center justify-center z-50 max-h-screen">
@@ -42,6 +42,12 @@ const PartenerModal = ({close, data}) => {
                   <a  
                     href={`https://wa.me/${phone}?text=Hola%20quiero%20hacer%20una%20consulta`} 
                     target="_blank" className='hover:border-b hover:border-black duration-200'>{phone}</a>
+                </div>
+                <div className="flex items-center py-2">
+                  <FaInstagram className="mr-2" />
+                  <a  
+                    href={`https://www.instagram.com/${instagram}`} 
+                    target="_blank" className='hover:border-b hover:border-black duration-200'>{instagram}</a>
                 </div>
                   </div>
               </div>

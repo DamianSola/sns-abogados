@@ -37,6 +37,7 @@ const Partners = () => {
                     open={handleClick}
                     partner={p}
                     formation={p.formation}
+                  
                     />
                 }): <p>Cargando...</p>}
             </div>

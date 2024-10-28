@@ -1,3 +1,5 @@
+import Services from "@/components/services";
+
 const { default: Footer } = require("@/components/footer")
 const { default: Navbar } = require("@/components/NavBar")
 
@@ -44,6 +46,7 @@ const AboutUs = () => {
 
                     </p>
                 </div>
+                <Services/>
             </main>
             <Footer/>
         </div>

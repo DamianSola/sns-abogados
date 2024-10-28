@@ -14,7 +14,6 @@ export default function Home() {
        <Introduction/>
        <Partners/>
        <Values/>
-       <Services/>
       </main>
       <Footer/>
     </div>
