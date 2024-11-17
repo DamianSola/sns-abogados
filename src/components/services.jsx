@@ -15,7 +15,7 @@ const Services = () => {
 
     return(
         <div className="p-10 sm:px-20 bg-gray-100 py-10 text-center duration-200" id="servicios">
-            <h1 className="text-3xl text-left tracking-widest py-6 font-bold">Ramas del Dercho</h1>
+            <h1 className="text-3xl text-left tracking-widest py-6 font-bold">Ramas del Derecho</h1>
                  <div className="block w-full  duration-200 text-left">
                 {Servicios || Servicios.length === 0 ? Servicios.slice(0,slice).map(s => {
                     return <div key={s.id} className="p-4">

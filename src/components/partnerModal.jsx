@@ -5,9 +5,11 @@ const PartenerModal = ({close, data}) => {
 
   const {name, field, image, phone, email, formation,  instagram, experience} = data
 
+  console.log(email)
+
     return(
         <div className="fixed inset-0 bg-gray-800 text-[#434343] bg-opacity-50 flex items-center justify-center z-50 max-h-screen">
-          <div className="bg-white rounded-lg md:w-2/3 p-6 relative max-h-svh">
+          <div className="bg-white rounded-lg md:w-3/4 p-6 relative max-h-svh">
           {/* Botón de cerrar modal */}
             <span
               className="absolute top-2 right-2 cursor-pointer"
@@ -29,26 +31,28 @@ const PartenerModal = ({close, data}) => {
               </svg>
             </span>
             <div className="md:flex my-4">
-              <div className="flex md:block w-1/2 md:w-1/3 p-4 md:items-start items-center">
+              <div className="flex md:block w-1/2 md:w-2/5 p-2 md:items-start items-center">
                 <img src={image} alt={name} className="w-full md:pb-4"/>
-                  <div className='block px-4 '>
+              <div className='block pr-4 '>
 
-                <div className="flex flex-wrap items-center py-2">
-                  <FaEnvelope className="mr-2" />
-                  <a href={`mailto:${email}`} target="_blank" className='hover:border-b hover:border-black duration-200'>{email}</a>
-                </div>
+               {email && email.map((e,i) => {
+                 return <div className="flex flex-wrap items-center py-2 " key={i}>
+                 <FaEnvelope className="mr-2" />
+                 <a href={`mailto:${e}`} target="_blank"  className='hover:border-b hover:border-black duration-200'>{e}</a>
+               </div>
+               })}
                 <div className="flex items-center py-2">
                   <FaPhone className="mr-2" />
                   <a  
                     href={`https://wa.me/${phone}?text=Hola%20quiero%20hacer%20una%20consulta`} 
                     target="_blank" className='hover:border-b hover:border-black duration-200'>{phone}</a>
                 </div>
-                <div className="flex items-center py-2">
+                {instagram && <div className="flex items-center py-2">
                   <FaInstagram className="mr-2" />
                   <a  
                     href={`https://www.instagram.com/${instagram}`} 
                     target="_blank" className='hover:border-b hover:border-black duration-200'>{instagram}</a>
-                </div>
+                </div>}
                   </div>
               </div>
               <div className="w-full md:w-2/3 p-4 overflow-y-auto max-h-96 md:max-h-svh">

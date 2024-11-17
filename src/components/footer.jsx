@@ -5,21 +5,23 @@ import Link from "next/link";
 import ContactForm from "./ContactForm";
 
 const Footer = () => {
+
+
   return (
     <footer className="bg-[#434343] text-gray-100 py-8 px-10" id="contacto">
       <div className="container mx-auto px-4">
         {/* Logo and Links */}
         <div className="flex flex-col md:flex-row justify-between items-top ">
           {/* Logo */}
-          <div className="mb-4 md:mb-0 bg-white text-center">
-            <Image src={Logo} alt="Logo" className="md:w-28" />
+          <div className="mb-4 md:mb-0 bg-white text-center w-fit md:m-0 m-auto">
+            <Image src={Logo} alt="Logo" className="md:w-28 w-32" />
           </div>
 
           {/* Links */}
           <ul className="hidden md:flex md:flex-row text-center md:text-left space-y-4 md:space-y-0 md:space-x-6">
             <li><a href="/" className="hover:text-gray-400">Inicio</a></li>
             <li><a href="/nosotros" className="hover:text-gray-400">Nosotros</a></li>
-            <li><a href="#servicios" className="hover:text-gray-400">Servicios</a></li>
+            {/* <li><a href="#servicios" className="hover:text-gray-400">Servicios</a></li> */}
             <li><a href="#asociados" className="hover:text-gray-400">Asociados</a></li>
             <li><a href="#contacto" className="hover:text-gray-400">Contáctanos</a></li>
           </ul>
@@ -38,8 +40,8 @@ const Footer = () => {
             <a  href="tel:+123456789" className="text-lg mb-2 flex items-center">
               <FaPhone  className="mr-2"/> +123 456 789</a>
             
-            <a  href="mailto:contacto@correo.com" className="text-lg mb-2 flex items-center">
-              <FaEnvelope  className="mr-2"/> info@example.com</a>
+            <a  href="mailto:estudiojuridico@snsabogados.com.ar" className="text-lg mb-2 flex items-center">
+              <FaEnvelope  className="mr-2"/> estudiojuridico@snsabogados.com.ar</a>
           <div className="flex space-x-4">
             <a href="#" className="text-white hover:text-gray-400">
               <FaFacebook size={24} />

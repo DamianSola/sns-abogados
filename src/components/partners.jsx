@@ -28,10 +28,10 @@ const Partners = () => {
             <h1 className="text-center text-3xl tracking-widest	p-6">Asociados</h1>
             {open && <PartenerModal close={() => setOpen(false)} data={partner}/>}
             <div className="flex flex-wrap w-full justify-around ">
-                {Partner ? Partner.map(p => {
+                {Partner ? Partner.map((p,i) => {
                     return <PartnersCard
                     name={p.name}
-                    key={p.id}
+                    key={i}
                     field={p.field}
                     image={"https://cisternasycia.cl/wp-content/uploads/2023/12/JT.-Eyzaguirre.Abogados-Color014-scaled-e1703768567494.jpg"}
                     open={handleClick}

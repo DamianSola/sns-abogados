@@ -16,14 +16,14 @@ const Navbar = () => {
       <div className="container mx-auto flex justify-between items-center p-4">
         {/* Logo */}
         <div className="text-2xl font-bold md:ml-0 ">
-        <Image src={Logo} alt='logo-sns'  className="w-28"/>
+        <Image src={Logo} alt='logo-sns'  className="w-20 md:w-28"/>
         </div>
 
         {/* Desktop Menu */}
         <ul className="hidden md:flex space-x-6 font-semibold">
           <li><a href="/" className="hover:border-b-2 border-[#434343] duration-100">Inicio</a></li>
           <li><a href="/nosotros" className=" hover:border-b-2 border-[#434343] duration-100">Nosotros</a></li>
-          <li><a href="/nosotros/#servicios" className=" hover:border-b-2 border-[#434343] duration-100">Servicios</a></li>
+          {/* <li><a href="/nosotros/#servicios" className=" hover:border-b-2 border-[#434343] duration-100">Servicios</a></li> */}
           <li><a href="/#asociados" className=" hover:border-b-2 border-[#434343] duration-100">Asociados</a></li>
           <li><a href="/#contacto" className=" hover:border-b-2 border-[#434343] duration-100">Contáctanos</a></li>
         </ul>
