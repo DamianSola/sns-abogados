@@ -43,7 +43,6 @@ const Navbar = () => {
           <ul className="space-y-4 p-4 text-center"  onClick={toggleMenu}>
             <li><a href="/" className="block hover:text-[#434343] hover:border-b-2 border-black duration-75">Inicio</a></li>
             <li><a href="/nosotros" className="block hover:text-[#434343] hover:border-b-2 border-black duration-75">Nosotros</a></li>
-            <li><a href="/#servicios" className="block hover:text-[#434343] hover:border-b-2 border-black duration-75">Servicios</a></li>
             <li><a href="/#asociados" className="block hover:text-[#434343] hover:border-b-2 border-black duration-75">Asociados</a></li>
             <li><a href="/#contacto" className="block hover:text-[#434343] hover:border-b-2 border-black duration-75">Contáctanos</a></li>
           </ul>
