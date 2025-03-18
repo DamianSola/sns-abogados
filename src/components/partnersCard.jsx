@@ -2,6 +2,9 @@
 import Image from "next/image";
 import { useState } from "react";
 import PartenerModal from "./partnerModal";
+import Leo from "../images/IMG_SNS5.leo.JPG";
+import Simo from "../images/IMG_SNS6.simo.JPG";
+import bollito from "../images/IMG_SNS8.bollito.JPG";
 
 const PartnersCard = ({image, name, field, open, partner}) => {
 
@@ -9,11 +12,17 @@ const PartnersCard = ({image, name, field, open, partner}) => {
         open(partner);
     }
 
+    const imagePath = image === 'simo' ? Simo : image === 'bollito'? bollito : Leo
+    
+   
+
+    console.log(imagePath)
+
 
     return(
         <div className="md:w-80 shadow-2xl mb-6" >
             <div className="w-full h-auto">
-            <img src={image} alt='photo' className="w-full h-full"/>
+            <Image src={imagePath} alt='photo' className="w-full h-full" width={500} height={100}/>
             </div>
             <div className="p-4 text-center">
                 <p className="tracking-wider text-xl font-bold">{name}</p>

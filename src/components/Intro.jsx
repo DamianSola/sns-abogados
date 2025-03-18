@@ -1,15 +1,15 @@
 'use client'
 
 import Image from 'next/image';
-import intro from "./junta-photo.webp"
+import imagenPortada from "../images/IMG_SNS.portada.jpg"
 
 const Introduction = () => {
   return (
     <div className="flex justify-center items-center">
-      {/* Picture Container */}
+      
       <div className="w-full max-h-svh z-0 md:px-20 bg-black ">
-        <img 
-          src="https://hispajuris.es/wp-content/uploads/2022/07/abogados-madrid.jpg"
+        <Image 
+          src={imagenPortada} width={500} height={200}
           alt="Introduction Image" 
           className="object-cover w-full max-h-svh"
         />

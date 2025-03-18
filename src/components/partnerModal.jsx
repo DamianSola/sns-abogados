@@ -1,11 +1,16 @@
 import { FaPhone, FaEnvelope, FaInstagram } from 'react-icons/fa';
+import Leo from "../images/IMG_SNS5.leo.JPG";
+import Simo from "../images/IMG_SNS6.simo.JPG";
+import bollito from "../images/IMG_SNS8.bollito.JPG";
+import Image from 'next/image';
 
 const PartenerModal = ({close, data}) => {
 
 
   const {name, field, image, phone, email, formation,  instagram, experience} = data
 
-  console.log(email)
+  const imagePath = image === 'simo' ? Simo : image === 'bollito'? bollito : Leo
+
 
     return(
         <div className="fixed inset-0 bg-gray-800 text-[#434343] bg-opacity-50 flex items-center justify-center z-50 max-h-screen">
@@ -32,7 +37,7 @@ const PartenerModal = ({close, data}) => {
             </span>
             <div className="md:flex my-4">
               <div className="flex md:block w-1/2 md:w-2/5 p-2 md:items-start items-center">
-                <img src={image} alt={name} className="w-full md:pb-4"/>
+                <Image src={imagePath} alt={name} className="w-full md:pb-4" width={500} height={100}/>
                 <div className='max-w-md mx-auto p-4'>
   {email && email.map((e, i) => {
     return (
