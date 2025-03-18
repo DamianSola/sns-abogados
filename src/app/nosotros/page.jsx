@@ -1,6 +1,6 @@
 import Services from "@/components/services";
 import Image from "next/image";
-import fotoNos from "../../images/IMG_SNS7.HEIC.jpg"
+import fotoNos from "../../images/sns_image.nosotros.jpg"
 
 const { default: Footer } = require("@/components/footer")
 const { default: Navbar } = require("@/components/NavBar")

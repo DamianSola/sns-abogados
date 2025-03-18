@@ -1,7 +1,7 @@
 import { FaPhone, FaEnvelope, FaInstagram } from 'react-icons/fa';
-import Leo from "../images/IMG_SNS5.leo.JPG";
-import Simo from "../images/IMG_SNS6.simo.JPG";
-import bollito from "../images/IMG_SNS8.bollito.JPG";
+import Leo from "../images/sns_image.leo.JPG";
+import Simo from "../images/sns_image.simo.JPG";
+import bollito from "../images/sns_image.bollito.JPG";
 import Image from 'next/image';
 
 const PartenerModal = ({close, data}) => {

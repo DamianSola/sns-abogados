@@ -2,9 +2,9 @@
 import Image from "next/image";
 import { useState } from "react";
 import PartenerModal from "./partnerModal";
-import Leo from "../images/IMG_SNS5.leo.JPG";
-import Simo from "../images/IMG_SNS6.simo.JPG";
-import bollito from "../images/IMG_SNS8.bollito.JPG";
+import Leo from "../images/sns_image.leo.JPG";
+import Simo from "../images/sns_image.simo.JPG";
+import bollito from "../images/sns_image.bollito.JPG";
 
 const PartnersCard = ({image, name, field, open, partner}) => {
 
