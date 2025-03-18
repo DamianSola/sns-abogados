@@ -13,11 +13,6 @@ const PartnersCard = ({image, name, field, open, partner}) => {
     }
 
     const imagePath = image === 'simo' ? Simo : image === 'bollito'? bollito : Leo
-    
-   
-
-    console.log(imagePath)
-
 
     return(
         <div className="md:w-80 shadow-2xl mb-6" >

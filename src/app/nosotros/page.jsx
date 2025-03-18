@@ -5,16 +5,16 @@ import fotoNos from "../../images/sns_image.nosotros.jpg"
 const { default: Footer } = require("@/components/footer")
 const { default: Navbar } = require("@/components/NavBar")
 
-
-
 const AboutUs = () => {
     return(
         <div>
             <Navbar/>
             <main className="min-h-screen w-full">
                 <div className="w-full" >
-                    <img src='https://www.unir.net/wp-content/uploads/2020/12/legal-law-concept-open-law-book-with-a-wooden-judges-gavel-on-table-picture-id1277143862.jpg'
-                    className="w-full md:h-80"/>
+                    <Image src='https://www.unir.net/wp-content/uploads/2020/12/legal-law-concept-open-law-book-with-a-wooden-judges-gavel-on-table-picture-id1277143862.jpg'
+                    className="w-full md:h-80"
+                    width={500} height={100}
+                    alt='imagen-nos'/>
                 </div>
                 <div className="px-6 md:px-20 text-left pb-10" >
                     <h1 className="text-3xl tracking-widest py-6 font-bold">Nosotros</h1>
