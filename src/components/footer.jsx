@@ -37,9 +37,12 @@ const Footer = () => {
               rel="noopener noreferrer" 
               className="text-lg mb-2 flex items-center">
                 <FaMapMarkerAlt  className="mr-2"/> Avenida Bicentenario de la Batalla de Salta nº 492 1er piso</a>
+              <a  href="tel:+123456789" className="text-lg mb-2 flex items-center">
+              <FaPhone  className="mr-2"/>Jorge Pablo Suárez Nelson +54 9 3874679815</a>
+              <a  href="tel:+123456789" className="text-lg mb-2 flex items-center">
+              <FaPhone  className="mr-2"/>Leonardo Martin González López +54 9 3875-017-140</a>
             <a  href="tel:+123456789" className="text-lg mb-2 flex items-center">
-              <FaPhone  className="mr-2"/> +123 456 789</a>
-            
+              <FaPhone  className="mr-2"/>Agustín Federico Simó +54 9 3875-545-757</a>
             <a  href="mailto:estudiojuridico@snsabogados.com.ar" className="text-lg mb-2 flex items-center">
               <FaEnvelope  className="mr-2"/> estudiojuridico@snsabogados.com.ar</a>
           <div className="flex space-x-4">
