@@ -46,10 +46,10 @@ const Footer = () => {
             <a  href="mailto:estudiojuridico@snsabogados.com.ar" className="text-lg mb-2 flex items-center">
               <FaEnvelope  className="mr-2"/> estudiojuridico@snsabogados.com.ar</a>
           <div className="flex space-x-4">
-            <a href="#" className="text-white hover:text-gray-400">
+            <a href="https://www.facebook.com/AbogadoGonzalezFamilia/" target="_blank" className="text-white hover:text-gray-400">
               <FaFacebook size={24} />
             </a>
-            <a href="#" className="text-white hover:text-gray-400">
+            <a href="https://www.instagram.com/sns.juridico.salta/" target="_blank" className="text-white hover:text-gray-400">
               <FaInstagram size={24} />
             </a>
           </div>
