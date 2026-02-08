@@ -1,7 +1,7 @@
 'use client'
 
 import Image from 'next/image';
-import imagenPortada from "../images/sns_image.portada.jpg"
+import imagenPortada from "@/images/sns_image.portada.jpg"
 
 const Introduction = () => {
   return (
