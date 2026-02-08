@@ -1,0 +1,14 @@
+[
+    {"name":"Cobranzas Extrajudiciales y Judiciales", "id":"0"},
+    {"name":"Ejecuciones Prendarias e Hipotecarias", "id":"1"},
+    {"name":"Derecho del Seguro, Responsabilidad Civil, Daños y Perjuicios", "id":"2"},
+    {"name":"Derecho Laboral", "id":"3"},
+    {"name":"Derecho Penal", "id":"4"},
+    {"name":"Derecho de Familia", "id":"5"},
+    {"name":"Violencia Familiar", "id":"6"},
+    {"name":"Derecho Comercial, Concursos y Quiebras", "id":"7"},
+    {"name":"Marcas y Patentes", "id":"8"},
+    {"name":"Derecho Tributario", "id":"9"},
+    {"name":"Derecho Administrativo", "id":"10"},
+    {"name":"Derecho Aduanero", "id":"11"}
+]
