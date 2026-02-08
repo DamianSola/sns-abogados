@@ -1,6 +1,8 @@
 import Services from "@/components/services";
 import Image from "next/image";
 import fotoNos from "../../images/sns_image.nosotros.jpg"
+import imageLaw from "../../images/imagen-law.jpg"
+
 
 const { default: Footer } = require("@/components/footer")
 const { default: Navbar } = require("@/components/NavBar")
@@ -11,7 +13,7 @@ const AboutUs = () => {
             <Navbar/>
             <main className="min-h-screen w-full">
                 <div className="w-full" >
-                    <Image src='https://www.unir.net/wp-content/uploads/2020/12/legal-law-concept-open-law-book-with-a-wooden-judges-gavel-on-table-picture-id1277143862.jpg'
+                    <Image src={imageLaw}
                     className="w-full md:h-80"
                     width={500} height={100}
                     alt='imagen-nos'/>
